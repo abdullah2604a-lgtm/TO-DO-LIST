@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-zinc-900 text-sky-400 flex justify-center">
+
+    <div class="main mt-[100px]">
+        <h1 class="text-4xl font-bold text-center mb-5">TO DO LIST</h1>
+
+        <form action="">
+
+            <input type="text" id="input" placeholder="Enter Any Task....." class="p-3 bg-sky-300 rounded-l-full text-black">
+            <button type="button" class="bg-blue-500 rounded-r-full p-3 text-black" onclick="add()"> Add</button>
+        </form>
+
+       <div class="list bg-sky-300 text-black mt-5 p-5 rounded-xl ">
+        <table class="w-full">
+            <input type="text" id="search" placeholder="search any word...."
+            oninput="filtertask()" class="p-3 mb-3 bg-sky-500 rounded" >
+            <thead class="bg-sky-700  rounded "> 
+            <th class="text-start">#</th>    
+           <th class="text-start p-3">Details</th>
+            <th class="text-start p-3">Action</th>
+            </thead>
+            <tbody id="list">
+             
+            </tbody>
+        </table>
+       </div>
+ 
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
